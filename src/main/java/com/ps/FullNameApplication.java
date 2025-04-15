@@ -1,8 +1,5 @@
 package com.ps;
-
-import java.util.regex.Pattern;
-
-public class NameExercise {
+public class FullNameApplication {
     public static void main(String[]args){
 
 
