@@ -1,15 +1,24 @@
 package com.ps;
 
+import java.util.regex.Pattern;
+
 public class NameExercise {
     public static void main(String[]args){
 
-        String firstName = "Orchid";
-        String middleName = "Leonid";
-        String lastName = "Valdez";
-        String suffix = "";
-        System.out.println ("Please enter your name:" + firstName +" "+ middleName +" "+ lastName + " "+ suffix);
-        System.out.printf(firstName);
-        System.out.printf(middleName);
-        System.out.printf(lastName);
+
+        String fullName = "Orchid|Leonid|Valdez";
+        String[] names = fullName.split(" ");
+
+        System.out.println ("Please enter your name: " + fullName);
+        if (names.length > 0) {
+            System.out.println("First Name:" + names[0]);
+        }
+
+        System.out.println("Middle Name:" );
+        System.out.println("Last Name:" );
+
+
+
+
     }
 }
